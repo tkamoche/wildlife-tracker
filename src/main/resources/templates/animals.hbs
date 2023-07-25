@@ -1,0 +1,13 @@
+{{#partial "content"}}
+    {{#if animals}}
+        {{#each animals}}
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">ID: {{id}}</li>
+                <li class="list-group-item">Name: {{name}}</li>
+            </ul>
+        {{/each}}
+    {{else}}
+        No Animals have been added yet;
+    {{/if}}
+{{/partial}}
+{{> layout.hbs}}

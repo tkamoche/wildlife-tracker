@@ -1,0 +1,13 @@
+{{#partial "content"}}
+    {{#if sightings}}
+        {{#each sightings}}
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">ID: {{id}}</li>
+                <li class="list-group-item">Location: {{location}}</li>
+                <li class="list-group-item">Ranger Name: {{rangerName}}</li>
+
+            </ul>
+        {{/each}}
+    {{/if}}
+{{/partial}}
+{{> layout.hbs}}

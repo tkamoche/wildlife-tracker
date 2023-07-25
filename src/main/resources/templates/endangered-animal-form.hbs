@@ -1,0 +1,23 @@
+{{#partial "content"}}
+    <form action="/endangered-animal-form" method="post">
+        <div class="form-group" >
+            <label for="id">Enter the Endangered Animal unique id</label>
+            <input type="text" name="id" id="id" class="form-control">
+        </div>
+        <div class="form-group" >
+            <label for="name">Enter Endangered Animal name id</label>
+            <input type="text" name="name" id="name" class="form-control" >
+        </div>
+        <div class="form-group" >
+            <label for="health">How healthy is the animal</label>
+            <input type="text" name="health" id="health" class="form-control" >
+        </div>
+        <div class="form-group">
+            <label for="age">How old is the animal</label>
+            <input type="text" name="age" id="age" class="form-control" >
+        </div>
+        <button type="submit" class="btn btn-primary"> Add an Endangered Animal</button>
+    </form>
+
+{{/partial}}
+{{> layout.hbs}}

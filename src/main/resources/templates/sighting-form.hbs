@@ -1,0 +1,21 @@
+{{#partial "content"}}
+    <div class="col-md-8">
+        <form action="/sighting-form" method="post">
+            <div class="form-group" >
+                <label for="id">Enter Animal id</label>
+                <input type="text" name="id" id="id" class="form-control">
+            </div>
+            <div class="form-group" >
+                <label for="location">Enter sighting location</label>
+                <input type="text" name="location" id="location" class="form-control">
+            </div>
+            <div class="form-group" >
+                <label for="name">Enter your name</label>
+                <input type="text" name="name" id="name" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary"> Add a Sighting</button>
+        </form>
+    </div>
+
+{{/partial}}
+{{> layout.hbs}}
